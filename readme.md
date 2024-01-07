@@ -13,7 +13,7 @@ To predict BMD condition from a hand radiograph:
 pipenv run predict path_to_radiography_image
 ```
 e.g. `pipenv run predict test.jpg`
-# Trouble Shooting
+### Trouble Shooting
 ```
 Model weights missing: resnet_weights.pt
 ```
@@ -22,7 +22,7 @@ Default weight path is `[project_directory]/resnet_weights.pt`. Check if the mod
 Image does not exists: [some file path]
 ```
 Image to be analyzed is not placed according to the path provided to the program.
-# Additional parameter
+### Additional parameter
 If the host machine is cuda-available and the package `torch` is installed and compiled with cuda, one can run the code with GPU by:
 ```
 pipenv run predict test.jpg --cuda
